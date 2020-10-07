@@ -1,0 +1,29 @@
+{
+    "schemaVersion": 1,
+    "id": "sturdygold",
+    "version": "${version}",
+
+    "name": "sturdy gold",
+    "description": "a Fabric-based modification that makes golden equipment more useful",
+    "authors": [
+        "user11681"
+    ],
+    "contact": {
+        "repo": "https://github.com/user11681/sturdygold"
+    },
+
+    "license": "MIT",
+    "icon": "assets/sturdygold/icon.png",
+
+    "environment": "*",
+    "entrypoints": {},
+
+    "mixins": [
+        "sturdygold.mixins.json"
+    ],
+
+    "depends": {
+        "fabricloader": ">=0.10.1+build.209",
+        "minecraft": "1.16.3"
+    }
+}
