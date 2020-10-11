@@ -2,11 +2,13 @@
     "required": true,
     "minVersion": "0.8",
     "package": "user11681.sturdygold.asm.mixin",
+    "plugin": "user11681.sturdygold.asm.SturdyGoldTransformer",
     "compatibilityLevel": "JAVA_8",
     "injectors": {
         "defaultRequire": 1
     },
     "mixins": [
-        "ToolMaterialsMixin"
+        "ArmorMaterialsDummyMixin",
+        "ToolMaterialsDummyMixin"
     ]
 }
