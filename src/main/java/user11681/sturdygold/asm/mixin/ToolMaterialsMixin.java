@@ -12,7 +12,7 @@ abstract class ToolMaterialsMixin {
     @ModifyArgs(method = "<clinit>",
                 at = @At(value = "INVOKE",
                          target = "net/minecraft/item/ToolMaterials.<init>(Ljava/lang/String;IIIFFILjava/util/function/Supplier;)V"))
-    private static void fixGold(final Args arguments) {
+    private static void fixGold(Args arguments) {
         if (arguments.get(0).equals("GOLD")) {
             arguments.set(2, 2);
             arguments.set(3, 768);

@@ -8,4 +8,6 @@ pluginManagement {
     }
 }
 
+rootProject.name = "sturdy-gold"
+
 includeBuild("loom")
