@@ -1,21 +1,35 @@
 {
-    "schemaVersion": 1,
-    "id": "sturdygold",
-    "version": "${version}",
+  "schemaVersion": 1,
+  "id": "sturdygold",
+  "version": "0.3.0",
 
-    "name": "sturdy gold",
-    "description": "a Fabric-based modification that makes golden equipment more durable and powerful",
-    "authors": [
-        "user11681"
-    ],
-    "contact": {
-        "repo": "https://github.com/user11681/sturdygold"
-    },
+  "name": "Sturdy Gold",
+  "description": "A Fabric mod which improves gold to be more useful.",
+  "authors": [
+    "Safro"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/sturdy-gold",
+    "sources": "https://github.com/Safrodev/sturdy-gold"
+  },
 
-    "license": "LGPL-3.0",
-    "icon": "assets/sturdygold/icon.png",
+  "license": "GNU LESSER GENERAL PUBLIC LICENSE",
+  "icon": "assets/sturdygold/icon.png",
 
-    "mixins": [
-        "sturdygold.mixins.json"
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.sturdy.gold.SturdyGold"
     ]
+  },
+  "mixins": [
+    "sturdygold.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  }
 }

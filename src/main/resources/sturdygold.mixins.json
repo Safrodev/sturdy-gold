@@ -1,13 +1,13 @@
 {
-    "required": true,
-    "minVersion": "0.8",
-    "package": "user11681.sturdygold.asm.mixin",
-    "compatibilityLevel": "JAVA_8",
-    "injectors": {
-        "defaultRequire": 1
-    },
-    "mixins": [
-        "ArmorMaterialsMixin",
-        "ToolMaterialsMixin"
-    ]
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.sturdy.gold.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "ToolsMaterialsMixin",
+    "ArmorMaterialsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
 }
